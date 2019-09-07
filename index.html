@@ -1,18 +1,10 @@
 <?php
-$access_token = '0eEdQTIljmOhQaC77YIOYqu/ceKPJaD2qLW777t/d8OayKTGD22mdBiYzLRbI8apAV/MK2cPIUHWG4lIwLbQYCUUfHcjesKxj9ICmG6l2u1nTWOQbX2V9epUPbhCVTPakQTbPqHjvN4G5ZVlvsJZiQdB04t89/1O/w1cDnyilFU=';
-$host = "ec2-107-22-211-182.compute-1.amazonaws.com";
-$CHANNEL_SECRET = 'ea8e387d720827ef193114197f8145d9';
-$user = "mmdkvvqziulstc";
-$pass = "e10240d71df70c411f5201bc37491e9091491ff276b8d8b66f8e507ea5b7dc22";
-$db = "dcv361109jo6fh";
-date_default_timezone_set("Asia/Bangkok");
-$date = date("Y-m-d");
-function showtime($time)
-{
-   "require": {
-       "php": "^7.1.0"
-   }
-}
+$API_URL = 'https://api.line.me/v2/bot/message';
+$ACCESS_TOKEN = '0eEdQTIljmOhQaC77YIOYqu/ceKPJaD2qLW777t/d8OayKTGD22mdBiYzLRbI8apAV/MK2cPIUHWG4lIwLbQYCUUfHcjesKxj9ICmG6l2u1nTWOQbX2V9epUPbhCVTPakQTbPqHjvN4G5ZVlvsJZiQdB04t89/1O/w1cDnyilFU='; 
+$channelSecret = 'ea8e387d720827ef193114197f8145d9';
+$POST_HEADER = array('Content-Type: application/json', 'Authorization: Bearer ' . $ACCESS_TOKEN);
+$request = file_get_contents('php://input');   // Get request content
+$request_array = json_decode($request, true);   // Decode JSON to Array
 {
 	$date = date("Y-m-d");
 	$h = split(":", $time);
