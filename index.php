@@ -1,5 +1,6 @@
 <?php
-    $accessToken = "5gZQWeN7r4W76y0rDoTq1kmZKNe0AHqZCoN0qKKUpVRyTg1qYcDk+9uvFzT0wOC1T6YhxwQ6qdRd7ld6Nnf/VT6rhFuPKAXakQ2gQazw/rDdeEmMASmG0i0wxPq5J9mT0CB1EQy2A2p+Bra2ayaa/AdB04t89/1O/w1cDnyilFU=";//copy Channel access token ในไลน์มาใส่
+    $accessToken = "5EvhagerRg7VC9y+FoN565++c1zgByO9MEJB4QW6tR/WUvKTzVXgi62h26EIgBFZpUCJpUmiPym17wqtaGm6RugP9AsTkBzuWikiagqWGUCKdwhrJxWnAOfL4c+tg4/ql74WC2xvSsgV/5gmvn3O6AdB04t89/1O/w1cDnyilFU=
+";
     
     $content = file_get_contents('php://input');
     $arrayJson = json_decode($content, true);
